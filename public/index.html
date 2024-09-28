@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send WhatsApp Message</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Send WhatsApp Message</h1>
+    <form id="messageForm">
+        <label for="number">Phone Number:</label>
+        <input type="text" id="number" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+        
+        <label for="scheduleTime">Schedule Time (optional):</label>
+        <input type="datetime-local" id="scheduleTime">
+        
+        <button type="button" onclick="sendMessage()">Send Message</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
